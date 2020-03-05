@@ -1,5 +1,9 @@
 import os
-route = input("Enter list location :")
+if os.path.isfile("list.txt"):
+	route = "list.txt"
+else:
+	route = input("Enter list location :")
+
 file = open( route, "r", encoding = 'utf8')
 count = 0;
 wordlist = [];
