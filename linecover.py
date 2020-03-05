@@ -1,5 +1,6 @@
 import os
-file = open("list.txt", "r", encoding = 'utf8')
+route = input("Enter list location :")
+file = open( route, "r", encoding = 'utf8')
 count = 0;
 wordlist = [];
 while True:
@@ -32,3 +33,5 @@ for i in range(len(wordlist)):
 	paragraph=paragraph.replace(wordlist[i][1],wordlist[i][0])
 
 print('After covert: \n {}'.format(paragraph))
+
+os.system("pause")
