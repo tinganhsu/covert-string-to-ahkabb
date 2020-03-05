@@ -31,11 +31,13 @@ while True:
 file.close();
 #print(wordlist)
 #print("lens: }".format(len(wordlist);i++))
-paragraph = input("Enter a string :")
+file = open ("PI.txt", "r", encoding = 'utf8')
+paragraph = file.read();
 for i in range(len(wordlist)):
 	#print(wordlist[i][1])
 	paragraph=paragraph.replace(wordlist[i][1],wordlist[i][0])
 
 print('After covert: \n {}'.format(paragraph))
-
+aftercovert = open ("Aftercovert.txt", "w", encoding = 'utf8')
+aftercovert.write(paragraph)
 os.system("pause")
